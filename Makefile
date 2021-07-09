@@ -1,34 +1,12 @@
 GLUON_BUILD_DIR := gluon-build
-GLUON_GIT_URL := https://github.com/freifunk-gluon/gluon.git
-GLUON_GIT_REF := 19381a235ee4dd4c174263778ca565fc65a4a573
+GLUON_GIT_URL := https://github.com/GoliathLabs/gluon.git
+GLUON_GIT_REF := 121515b1aa66c73bbddd2ade15afa66400fd1c92
 
 PATCH_DIR := ${GLUON_BUILD_DIR}/site/patches
 SECRET_KEY_FILE ?= ${HOME}/.gluon-secret-key
 
 GLUON_TARGETS ?= \
-	ath79-generic \
-	ath79-nand \
-	bcm27xx-bcm2708 \
-	bcm27xx-bcm2709 \
-	bcm27xx-bcm2710 \
-	ipq40xx-generic \
-	ipq806x-generic \
-	lantiq-xrx200 \
-	lantiq-xway \
-	mediatek-mt7622 \
-	mpc85xx-p1010 \
-	mpc85xx-p1020 \
-	mvebu-cortexa9 \
-	ramips-mt7620 \
-	ramips-mt7621 \
-	ramips-mt76x8 \
-	ramips-rt305x \
-	rockchip-armv8 \
-	sunxi-cortexa7 \
-	x86-64 \
-	x86-generic \
-	x86-geode \
-	x86-legacy
+	ramips-mt7621
 
 
 GLUON_AUTOUPDATER_BRANCH := next
